@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Strategy Analyzer</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trading Strategy Performance Analyzer</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <h2>Enter Trading Data</h2>
+            <label for="totalTrades">Total Trades:</label>
+            <input type="number" id="totalTrades" placeholder="E.g., 100">
+            
+            <label for="winRate">Win Rate (%):</label>
+            <input type="number" id="winRate" placeholder="E.g., 60">
+            
+            <label for="avgProfit">Average Profit per Trade ($):</label>
+            <input type="number" id="avgProfit" placeholder="E.g., 50">
+            
+            <label for="avgLoss">Average Loss per Trade ($):</label>
+            <input type="number" id="avgLoss" placeholder="E.g., 30">
+            
+            <button id="analyzeBtn">Analyze Performance</button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-section">
+            <h2>Performance Metrics</h2>
+            <p><strong>Profit Factor:</strong> <span id="profitFactor">-</span></p>
+            <p><strong>Total Profit:</strong> <span id="totalProfit">-</span></p>
+            <p><strong>Total Loss:</strong> <span id="totalLoss">-</span></p>
+        </div>
+    </div>
+    <script src="scr3.js"></script>
+</body>
+</html>

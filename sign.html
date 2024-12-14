@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binance-Style Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Section -->
+    <div class="logo">
+        <i class="fa-duotone fa-solid fa-arrow-up-right-dots"></i>
+      <h1>Login to Your Account</h1>
+    </div>
+
+    <!-- Login Form -->
+    <form class="login-form">
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+
+      <div class="extra-options">
+        <div>
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+
+      <button onclick="login()" type="submit" class="login-button">Log In</button>
+    </form>
+
+    <p class="divider">OR</p>
+
+    <!-- Social Login Options -->
+    <div class="social-login">
+      <button class="google-login">Login with Google</button>
+      <button class="apple-login">Login with Apple</button>
+    </div>
+
+    <!-- Redirect to Signup -->
+    <p class="signup-text">Don't have an account? <a href="#">Sign Up</a></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

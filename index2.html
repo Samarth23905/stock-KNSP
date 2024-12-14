@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Risk-Reward Ratio Calculator</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <h1>Stock Risk-Reward Ratio Calculator</h1>
+        </header>
+
+        <main>
+            <section class="calculator">
+                <h2>Enter Stock Details</h2>
+                <form id="rrForm">
+                    <label for="entryPrice">Entry Price ($):</label>
+                    <input type="number" id="entryPrice" placeholder="e.g., 100" required>
+
+                    <label for="stopLoss">Stop Loss ($):</label>
+                    <input type="number" id="stopLoss" placeholder="e.g., 95" required>
+
+                    <label for="targetPrice">Target Price ($):</label>
+                    <input type="number" id="targetPrice" placeholder="e.g., 110" required>
+
+                    <button type="submit">Calculate</button>
+                </form>
+
+                <div class="results">
+                    <h3>Results</h3>
+                    <p id="risk">Risk per Share: $0.00</p>
+                    <p id="reward">Reward per Share: $0.00</p>
+                    <p id="ratio">Risk-Reward Ratio: 0:0</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Stock R/R Calculator</p>
+        </footer>
+
+        <script src="script2.js"></script>
+    </body>
+    </html>

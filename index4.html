@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="stockChart" width="800" height="400"></canvas>
+    <script>
+        // Example data from the analysis
+        const stocks = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'];
+        const prices = [179.45, 314.55, 135.78, 144.23, 254.87];
+        const sentiments = [1.2, 0.5, -0.3, 0.8, 1.1];
+
+        const ctx = document.getElementById('stockChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: stocks,
+                datasets: [
+                    {
+                        label: 'Stock Prices ($)',
+                        data: prices,
+                        backgroundColor: 'rgba(47,47,186)',
+                        yAxisID: 'y',
+                    },
+                    {
+                        label: 'Sentiment Scores',
+                        data: sentiments,
+                        backgroundColor: 'rgba(102,102,112)',
+                        yAxisID: 'y1',
+                    },
+                ],
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        position: 'left',
+                    },
+                    y1: {
+                        beginAtZero: true,
+                        position: 'right',
+                    },
+                },
+            },
+        });
+    </script>
+</body>
+</html>

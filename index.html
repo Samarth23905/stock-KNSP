@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Stock Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>AI Stock Analysis Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="#buy-sell">Buy/Sell Signals</a></li>
+                <li><a href="#trend-prediction">Trend Prediction</a></li>
+                <li><a href="#Risk-Reward Ratio Calculator">Risk-Reward Ratio Calculator</a></li>
+                <li><a href="#dashboard">Dashboard</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <label for="stockSymbol">Enter Stock Symbol:</label>
+                <input type="text" id="stockSymbol" placeholder="e.g., AAPL" />
+                <button id="fetchData">Fetch Data</button>
+            </div>
+        
+            <canvas id="stockChart" width="800" height="400"></canvas>
+        
+            <h2>AI Prediction</h2>
+            <div id="prediction">...</div>
+        </section>
+
+        <section id="trend-prediction">
+            <h2>Stock Trend Prediction</h2>
+            <p>Analyze past stock trends to predict future movements.</p>
+            <div>
+                <label for="stock-symbol">Enter Stock Symbol:</label>
+                <input type="text" id="stock-symbol">
+                <button id="predict-trend">Predict Trend</button>
+            </div>
+            <div id="trend-result"></div>
+        </section>
+
+        <section id="sentiment-analysis">
+            <h2>Risk-Reward Ratio Calculator</h2>
+            <p>Analyzes the potential profitability and risk of a trade or investment by comparing the amount of money you are willing to risk to the potential reward you aim to gain.</p>
+            <button id="rrrc" onclick="rrrc()">Stock Risk-Reward Ratio Calculator</button>
+        </section>
+
+        <section id="sentiment-analysis">
+            <h2>Sentimental-analysis</h2>
+            <p>analysis in stock markets is used to gauge the emotions, opinions, and attitudes of investors and market participants about stocks, sectors, or the market as a whole.</p>
+            <button id="rrrc" onclick="sa()">Sentimental-analysis</button>
+        </section>
+        
+
+        <section id="dashboard">
+            <h2>Interactive Dashboard</h2>
+            <p>View trading strategies and performance metrics.</p>
+            <div id="dashboard-content"></div>
+            <button onclick="strat()">Click here to see the stratagies and performence matrics</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Stock Analysis Tool</p>
+    </footer>
+<script src="script.js"></script>    
+</body>
+</html>
